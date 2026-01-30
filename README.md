@@ -138,9 +138,9 @@ npm test            # Watch mode
 ```
 
 **Test Coverage:**
-- 137 tests covering components, hooks, context, and API
+- 130 tests covering components, hooks, context, and API
 - Component tests for PokemonCard, PokemonList, FilterBar, SortToggle, Header, LoadingSpinner, StatBar
-- Hook tests for useUrlState, useInfiniteScroll, useFuzzySearch, useDebounce, useScrollRestore
+- Hook tests for useUrlState, useInfiniteScroll, useDebounce, useScrollRestore
 - Context tests for ThemeContext, PokemonContext
 - API tests for all endpoints
 
