@@ -3,7 +3,7 @@ import { fetchPokemon, fetchPokemonTypes, capturePokemon, releasePokemon, fetchC
 
 // Mock fetch globally
 const mockFetch = vi.fn();
-global.fetch = mockFetch;
+globalThis.fetch = mockFetch;
 
 describe('pokemonApi', () => {
   beforeEach(() => {

@@ -21,7 +21,7 @@ interface UseUrlStateReturn {
 }
 
 export const VALID_PAGE_SIZES: readonly PageSize[] = [5, 10, 20] as const;
-export const VALID_SORT_ORDERS: readonly SortOrder[] = ['asc', 'desc'] as const;
+const VALID_SORT_ORDERS: readonly SortOrder[] = ['asc', 'desc'] as const;
 
 const DEFAULT_STATE: UrlState = {
   page: 1,
