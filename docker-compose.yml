@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   backend:
     build:
@@ -12,7 +10,7 @@ services:
       - FLASK_DEBUG=${FLASK_DEBUG:-false}
       - CACHE_TTL=${CACHE_TTL:-60}
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/api/pokemon/types"]
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/api/pokemon/types')"]
       interval: 30s
       timeout: 10s
       retries: 3
