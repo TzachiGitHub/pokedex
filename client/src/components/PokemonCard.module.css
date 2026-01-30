@@ -1,0 +1,174 @@
+.statBarContainer {
+  margin-bottom: 4px;
+}
+
+.statBarHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.progressBar {
+  height: 6px;
+  border-radius: 3px;
+  background-color: var(--mui-palette-action-hover);
+}
+
+.progressBarInner {
+  border-radius: 3px;
+  background-color: var(--bar-color) !important;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: visible;
+}
+
+.cardDefault {
+  border: 1px solid var(--mui-palette-divider);
+}
+
+.cardCaptured {
+  border: 2px solid var(--mui-palette-primary-main);
+}
+
+.legendaryBadge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  z-index: 1;
+}
+
+.legendaryIcon {
+  color: gold;
+  font-size: 28px;
+}
+
+.numberBadge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.imageContainer {
+  position: relative;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.imageSkeleton {
+  position: absolute;
+}
+
+.pokemonImage {
+  width: 96px !important;
+  height: 96px !important;
+  max-width: 96px;
+  max-height: 96px;
+  object-fit: contain !important;
+  image-rendering: pixelated;
+  transition: opacity 0.3s;
+}
+
+.imageLoading {
+  opacity: 0;
+}
+
+.imageLoaded {
+  opacity: 1;
+}
+
+.imageError {
+  filter: grayscale(1);
+}
+
+.cardContent {
+  flex-grow: 1;
+  padding-top: 12px;
+}
+
+.pokemonName {
+  font-weight: bold;
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.typesContainer {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.typeChip {
+  color: white;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.statsContainer {
+  margin-top: 8px;
+}
+
+.generationText {
+  display: block;
+  margin-top: 8px;
+}
+
+.captureButtonContainer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 12px;
+}
+
+.captureButton {
+  transition: all 0.2s;
+}
+
+.captureButton:hover {
+  transform: scale(1.2);
+}
+
+.captureButtonActive {
+  color: var(--mui-palette-primary-main);
+}
+
+.captureButtonInactive {
+  color: var(--mui-palette-text-secondary);
+}
+
+.captureButtonActive:hover {
+  color: var(--mui-palette-error-main);
+}
+
+.captureButtonInactive:hover {
+  color: var(--mui-palette-primary-main);
+}
+
+.captureIcon {
+  font-size: 32px;
+}
+
+.captureIconActive {
+  fill: currentColor;
+}
+
+.captureIconInactive {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1;
+}

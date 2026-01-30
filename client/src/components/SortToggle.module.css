@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.leftSection {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sortSection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sortLabel {
+  margin-left: 4px;
+}
+
+.pageSizeControl {
+  min-width: 100px;
+}

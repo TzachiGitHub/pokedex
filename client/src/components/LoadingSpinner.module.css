@@ -1,0 +1,44 @@
+.spinnerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.message {
+  margin-top: 16px;
+}
+
+.skeletonCard {
+  height: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--mui-palette-divider);
+}
+
+.skeletonContent {
+  padding: 16px;
+}
+
+.typesRow {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.statLine {
+  margin-top: 8px;
+}
+
+.generationLine {
+  margin-top: 8px;
+}
+
+.captureButtonRow {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8px;
+}

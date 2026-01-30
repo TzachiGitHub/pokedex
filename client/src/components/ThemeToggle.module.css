@@ -1,0 +1,15 @@
+.toggleButton {
+  transition: transform 0.3s ease;
+}
+
+.toggleButton:hover {
+  transform: rotate(180deg);
+}
+
+.lightMode {
+  color: var(--mui-palette-text-primary);
+}
+
+.darkMode {
+  color: inherit;
+}

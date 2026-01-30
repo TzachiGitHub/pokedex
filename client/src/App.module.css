@@ -1,0 +1,9 @@
+.appContainer {
+  min-height: 100vh;
+  background-color: var(--mui-palette-background-default);
+}
+
+.mainContent {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
